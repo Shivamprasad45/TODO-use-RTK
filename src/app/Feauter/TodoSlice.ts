@@ -5,7 +5,9 @@ import { Data } from "../../../types";
 // Define a service using a base URL and expected endpoints
 export const todoApi = createApi({
   reducerPath: "todoApi", // Name of the slice
-  baseQuery: fetchBaseQuery({ baseUrl: "/api" }), // Base URL of your API
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://todoapp-rose-three.vercel.app/api",
+  }), // Base URL of your API
   tagTypes: ["todo"],
   // Define endpoints
   endpoints: (builder) => ({
